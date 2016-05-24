@@ -14,7 +14,6 @@ require(tigerstats)
 ```
 
 # Introduction
-
 <In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?>
 
 #### what was asked for
@@ -36,27 +35,37 @@ a chi-squared test would be chosen.>
 for catagorical explanitory variables (such as count of type of response)
 a chi-squared test would be chosen.>
 
+We were given two comma separated values files containing these measurements 
 
-# Methods for presence vs absence of odor
+* **Scorpion** a tag indicating which scorpion was measured
+* **Behavior** a factor variable [no sting, dry sting, wet sting, jab]
+* **Volume** a numerical measure of venom amount (wet sting)
+* **Probes** a numerical count of the number of "hits" applied to get a reaction
+* **Reaction_Time** a numerical measure of time it took to get a reaction
+* **size** a factor (large, small) of scorpion size
+* **roll** a factor (control, threat) of absense or presence of an apparent threat to the scorpion (rat urine)
+
+There were 30 different scorpions tested. Each scorpion was tested twice, once in **control** (no rat urine present) and once in **threat** (rat urine )  the order of testing was randomly assigned.
+
+One of the csv files refers to the individual tests run. It has 60 observations.  The other is conveiently organized as paired data with obsevations of each scorpion in both threat and control conditions for conveinence in paired tests.
+
+#Methods for presence vs absence of odor
 
 <Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.>
 
-#Results
 
+#Results
 <Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.>
 
 ## Descriptive Results
 
 ### Graphical Descriptive Results
-
 <Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question>
 
 ### Numerical Descriptive Results
-
 <Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question>
 
 ## Inferential Results
-
 <State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question>
 
 # Methods for different sizes (large vs small)
